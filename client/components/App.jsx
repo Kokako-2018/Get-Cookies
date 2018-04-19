@@ -21,6 +21,9 @@ render() {
         <div>
             <h1>hello</h1>
             <div className='spinner'> <img class='cookie' src='http://priya-sesame-street-server.herokuapp.com/images/cookie.png'/></div>
+            <div> 
+                <SongButton />
+            </div>
         </div>
     )
 }
