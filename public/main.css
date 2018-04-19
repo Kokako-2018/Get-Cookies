@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Interstate Compressed;
+    src: url('fonts/Interstate Compressed Bold');
+  }
+
+  body,html{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-size: 20px;
+    font-family: 'Interstate Compressed Bold', Interstate Compressed;
+  }
+
+  .spinner {
+    margin-top: 5rem;
+    width: 5rem;
+    height: 5rem;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    opacity: 0.5;
+  }
+  
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
