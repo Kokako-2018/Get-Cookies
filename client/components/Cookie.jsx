@@ -12,7 +12,7 @@ export default class Cookie extends React.Component {
 render() {
     return (
         <div>
-            
+            <img src={props.image}/>
         </div>
     )
   }
