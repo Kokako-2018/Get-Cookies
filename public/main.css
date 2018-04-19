@@ -20,11 +20,17 @@
     margin-top: 5rem;
     width: 10rem;
     height: 10rem;
+    
+    opacity: 100%;
+    padding: 12em;
+  }
+
+  .spinning {
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
     opacity: 100%;
-    padding: 215px;
+    padding: 12em;
   }
 
   .cookie {

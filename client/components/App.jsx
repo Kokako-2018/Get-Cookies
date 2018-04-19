@@ -11,17 +11,22 @@ export default class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-
+            playing: false
         }
+        this.startPlaying = this.startPlaying.bind(this)
+    }
+
+    startPlaying() {
+        this.setState({playing: !this.state.playing})
     }
 
 
 render() {
     return (
         <div>
-            <div className='spinner'> <img class='cookie' src='http://priya-sesame-street-server.herokuapp.com/images/cookie.png'/></div>
+            <div className={`${this.state.playing ? 'spinning' : ''} spinner`}> <img className='cookie' src='http://priya-sesame-street-server.herokuapp.com/images/cookie.png'/></div>
             <div> 
-                <SongButton />
+                <SongButton playing={this.state.playing}  startPlaying={this.startPlaying} />
             </div>
         </div>
     )
