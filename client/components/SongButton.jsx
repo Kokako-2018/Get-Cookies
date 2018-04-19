@@ -21,7 +21,7 @@ render() {
     return (
         <div>
           <div className="button">
-            <button onClick={this.props.startPlaying}>Press Play!</button>  
+            <button className="playbutton" onClick={this.props.startPlaying}>Press Play!</button>  
             {this.props.playing && <Sound url="sounds/Cookie.mp3" playStatus={Sound.status.PLAYING} playFromPosition={1}/>}
           </div>
         </div>
