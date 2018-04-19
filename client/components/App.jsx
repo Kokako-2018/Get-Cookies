@@ -17,12 +17,7 @@ export default class App extends React.Component {
 render() {
     return (
         <div>
-            <h1> We sure are!! </h1>
-            <h1> We sure are!! </h1>
-            <h1> We sure are!! </h1>
-            <h1> We sure are!! </h1>
-            <h1> We sure are!! </h1>
-            <h1> We sure are!! </h1>
+            <h1> </h1>
         </div>
     )
 }
