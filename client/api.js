@@ -1,6 +1,5 @@
 import request from 'superagent'
 
-const getCookieUrl = '/projects'
 const getCookieUrl = 'https://priya-sesame-street-server.herokuapp.com/monsters'
 
 export function getCookie (callback) {
