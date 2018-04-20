@@ -23,6 +23,8 @@
     
     opacity: 100%;
     padding: 12em;
+    position: fixed;
+    align-items: center;
   }
 
   .spinning {
@@ -35,6 +37,7 @@
 
   .cookie {
    width:100%;
+   
   }
 
   .playbutton {
@@ -49,6 +52,10 @@
     font-family: 'Interstate Compressed Bold', Interstate Compressed;
   }
   
+  .elmo {
+   margin-left:1000px;
+
+  }
   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
   @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
