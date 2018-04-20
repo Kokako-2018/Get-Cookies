@@ -19624,20 +19624,23 @@ var App = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { className: (this.state.playing ? 'spinning' : '') + ' spinner' },
-                    ' ',
-                    _react2.default.createElement('img', { className: 'cookie', src: 'http://priya-sesame-street-server.herokuapp.com/images/cookie.png' })
-                ),
-                _react2.default.createElement(
-                    'div',
                     null,
                     this.state.images.length !== 0 && _react2.default.createElement(_CookieMonster2.default, { imageUrl: this.state.images[1].imageUrl }),
                     this.state.images.length !== 0 && _react2.default.createElement(_Elmo2.default, { imageUrl: this.state.images[0].imageUrl })
                 ),
                 _react2.default.createElement(
                     'div',
-                    { className: (this.state.playing ? 'slide-top' : '') + ' spinner' },
-                    _react2.default.createElement(_SongButton2.default, { playing: this.state.playing, startPlaying: this.startPlaying })
+                    { className: 'home-stuff' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: (this.state.playing ? 'spinning' : '') + ' spinner' },
+                        _react2.default.createElement('img', { className: 'cookie', src: 'http://priya-sesame-street-server.herokuapp.com/images/cookie.png' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: (this.state.playing ? 'slide-top' : '') + ' ' },
+                        _react2.default.createElement(_SongButton2.default, { playing: this.state.playing, startPlaying: this.startPlaying })
+                    )
                 )
             );
         }
@@ -19747,7 +19750,7 @@ var CookieMonster = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement("img", { className: "spinner", src: this.state.url })
+                _react2.default.createElement("img", { className: "cookieMonster", src: this.state.url })
             );
         }
     }]);
