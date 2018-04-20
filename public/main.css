@@ -36,6 +36,18 @@
   .cookie {
    width:100%;
   }
+
+  .playbutton {
+    background-color: rgb(1, 165, 88); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Interstate Compressed Bold', Interstate Compressed;
+  }
   
   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
