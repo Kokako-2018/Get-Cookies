@@ -18,7 +18,7 @@ render() {
 
     return (
         <div>
-            <img className="spinner" src={this.state.url} />
+            <img className="cookieMonster" src={this.state.url} />
         </div>
     )
   }

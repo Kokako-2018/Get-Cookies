@@ -37,16 +37,20 @@ export default class App extends React.Component {
 render() {
     return (
         <div>
-            <div className={`${this.state.playing ? 'spinning' : ''} spinner`}> <img className='cookie' src='http://priya-sesame-street-server.herokuapp.com/images/cookie.png'/></div>
             <div> 
                 {this.state.images.length !== 0 && <CookieMonster imageUrl={this.state.images[1].imageUrl}/>} 
-                {this.state.images.length !== 0 && <Elmo imageUrl={this.state.images[0].imageUrl}/>} 
+                {/* {this.state.images.length !== 0 && <Elmo imageUrl={this.state.images[0].imageUrl}/>}  */}
+            </div>
+            <div className="home-stuff">
+                <div className={`${this.state.playing ? 'spinning' : ''} spinner`}> 
+                    <img className='cookie' src='http://priya-sesame-street-server.herokuapp.com/images/cookie.png'/>
+                </div>
+                <div className={`${this.state.playing ? 'slide-top' : ''} `}>
+                    
+                    <SongButton playing={this.state.playing}  startPlaying={this.startPlaying} />
+                </div>
             </div>
             
-            <div className={`${this.state.playing ? 'slide-top' : ''} spinner`}>
-                
-                <SongButton playing={this.state.playing}  startPlaying={this.startPlaying} />
-            </div>
             
         </div>
     )

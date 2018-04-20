@@ -21,10 +21,7 @@
     width: 10rem;
     height: 10rem;
     opacity: 100%;
-    padding: 12em;
-    position: fixed;
-    align-items: center;
-    padding: 4em;
+    padding: 2em;
   }
 
   .spinning {
@@ -32,19 +29,18 @@
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
     opacity: 100%;
-    padding: 4em;
+    /* padding: 4em; */
   }
 
-  .slide-top {
+  /* .slide-top {
     -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
     animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
     opacity: 100%;
     padding: 4em;
-  }
+  } */
 
   .cookie {
    width:100%;
-   
   }
 
   .playbutton {
@@ -58,11 +54,28 @@
     font-size: 30px;
     font-family: 'Interstate Compressed Bold', Interstate Compressed;
   }
+
+  .home-stuff {
+    margin-top: 200px;
+    position: fixed;
+    left: 800px;
+  }
+
+  /* .button {
+    align-items: ;
+  } */
   
   .elmo {
    margin-left:1000px;
+  }
+
+  .cookieMonster {
+   width: 30em;
+   position: fixed;
+   left: 50px;
 
   }
+
   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
   @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
   @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
