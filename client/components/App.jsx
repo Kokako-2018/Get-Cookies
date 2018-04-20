@@ -39,7 +39,7 @@ render() {
         <div>
             <div> 
                 {this.state.images.length !== 0 && <CookieMonster imageUrl={this.state.images[1].imageUrl}/>} 
-                {/* {this.state.images.length !== 0 && <Elmo imageUrl={this.state.images[0].imageUrl}/>}  */}
+                {this.state.images.length !== 0 && <Elmo imageUrl={this.state.images[0].imageUrl}/>} 
             </div>
             <div className="home-stuff">
                 <div className={`${this.state.playing ? 'spinning' : ''} spinner`}> 

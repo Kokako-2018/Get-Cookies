@@ -61,19 +61,18 @@
     left: 800px;
   }
 
-  /* .button {
-    align-items: ;
-  } */
   
   .elmo {
-   margin-left:1000px;
+    width: 30em;
+    position: fixed;
+    right: 50px;
+    top: 440px;
   }
 
   .cookieMonster {
-   width: 30em;
-   position: fixed;
-   left: 50px;
-
+    width: 30em;
+    position: fixed;
+    left: 50px;
   }
 
   @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
