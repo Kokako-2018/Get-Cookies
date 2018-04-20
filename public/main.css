@@ -20,11 +20,11 @@
     margin-top: 5rem;
     width: 10rem;
     height: 10rem;
-    
     opacity: 100%;
     padding: 12em;
     position: fixed;
     align-items: center;
+    padding: 4em;
   }
 
   .spinning {
@@ -32,7 +32,14 @@
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
     opacity: 100%;
-    padding: 12em;
+    padding: 4em;
+  }
+
+  .slide-top {
+    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+    opacity: 100%;
+    padding: 4em;
   }
 
   .cookie {
